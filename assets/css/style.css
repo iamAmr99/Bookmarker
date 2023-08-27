@@ -1,0 +1,53 @@
+/* root */
+/* font-family: 'Dancing Script', cursive;  hand writing 
+font-family: 'Roboto Slab', serif;
+font-family: 'Roboto Condensed', sans-serif;
+*/
+body {
+  background: hsla(48, 78%, 82%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(48, 78%, 82%, 1) 0%,
+    hsla(340, 87%, 59%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(48, 78%, 82%, 1) 0%,
+    hsla(340, 87%, 59%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(48, 78%, 82%, 1) 0%,
+    hsla(340, 87%, 59%, 1) 100%
+  );
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font-family: "Roboto Slab", serif;
+}
+.logo {
+  color: #ffd700;
+  font-family: "Dancing Script", cursive;
+  font-size: 3em;
+  font-weight: 600;
+  cursor: default;
+}
+.motto {
+  font-family: "Roboto Condensed", sans-serif;
+}
+#tableSection {
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+.line {
+  border: 1px black dashed !important;
+}
+@media (max-width: 400px) {
+  #tableSection {
+    clear: both;
+  }
+}

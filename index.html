@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmarker</title>
+    <!-- ? G fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ? G fonts end -->
+    <!-- ? fav icon start -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/imgs/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/imgs/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/imgs/favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="assets/imgs/favicon_io/site.webmanifest" />
+    <!-- ? fav icon end -->
+    <link
+      rel="stylesheet"
+      href="assets/node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body class="container-fluid d-md-flex flex-row-reverse vh-100">
+    <div class="container" id="rightSection">
+      <!-- ! LOGO SECTION __ START -->
+      <div class="text-center" id="logoSection">
+        <div
+          class="d-flex m-auto align-items-center justify-content-center p-5"
+        >
+          <h1 class="logo mx-3">Bookmarker</h1>
+          <i class="fa-solid fa-star fa-fade fa-2xl" style="color: #ffd700"></i>
+        </div>
+        <p class="line"></p>
+        <h3 class="p-2">
+          <i class="mx-2 fa-solid fa-bookmark"></i
+          ><span class="motto">Save your favorite sites</span>
+          <i class="fa-solid fa-bookmark"></i>
+        </h3>
+      </div>
+      <!-- !  LOGO SECTION __ END -->
+
+      <!-- ! FORM __ START -->
+      <div>
+        <div class="container-fluid d-flex flex-wrap" id="formSection">
+          <label class="my-2 fs-6 fw-bold" for="siteNameInput"
+            ><i class="mx-2 fw-bold fa-solid fa-book-bookmark"></i>Site
+            Name</label
+          >
+          <input
+            type="text"
+            class="form-control my-2"
+            id="siteNameInput"
+            placeholder="NO whitespace"
+          />
+
+          <label class="my-2 fs-6 fw-bold" for="siteURLInput"
+            ><i class="mx-2 fw-bold fa-solid fa-link"></i>Site URL</label
+          >
+          <input
+            type="url"
+            class="form-control my-2"
+            id="siteURLInput"
+            placeholder="No need to add a prefix"
+          />
+
+          <button
+            class="btn btn-info fs-5 p-2 w-50 my-4 mx-auto shadow"
+            id="addBtn"
+            disabled
+          >
+            Add
+          </button>
+        </div>
+        <div class="container-fluid btn-group my-2">
+          <input
+            type="search"
+            class="w-100 px-3"
+            id="search"
+            onkeyup="searching(this.value)"
+            placeholder="search for bookmark"
+          />
+          <button
+            class="btn btn-info px-5 border-black rounded-pill rounded-start-0"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </div>
+      <!-- ! FORM __ END -->
+      <div class="line my-2"><!-- ! LINE BR --></div>
+    </div>
+
+    <div class="container" id="tableSection">
+      <!-- ! TABLE __ START -->
+      <table
+        class="table table-sm table-light table-striped table-bordered border-black table-hover text-center my-4"
+      >
+        <thead class="sticky-top table-dark">
+          <tr>
+            <th scope="col">Index</th>
+            <th scope="col">Website Name</th>
+            <th scope="col">Visit</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody
+          class="table-group-divider align-middle"
+          id="bookmarkTable"
+        ></tbody>
+      </table>
+    </div>
+    <!-- ! TABLE __ END -->
+
+    <script src="assets/node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+    <script src="assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
