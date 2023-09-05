@@ -6,7 +6,7 @@ font-family: 'Roboto Condensed', sans-serif;
 body {
   background: hsla(48, 78%, 82%, 1);
 
-  background: linear-gradient(
+  background: -webkit-linear-gradient(
     90deg,
     hsla(48, 78%, 82%, 1) 0%,
     hsla(340, 87%, 59%, 1) 100%
@@ -18,7 +18,7 @@ body {
     hsla(340, 87%, 59%, 1) 100%
   );
 
-  background: -webkit-linear-gradient(
+  background: linear-gradient(
     90deg,
     hsla(48, 78%, 82%, 1) 0%,
     hsla(340, 87%, 59%, 1) 100%
