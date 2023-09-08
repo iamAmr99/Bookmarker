@@ -4,24 +4,24 @@ font-family: 'Roboto Slab', serif;
 font-family: 'Roboto Condensed', sans-serif;
 */
 body {
-  background: hsla(48, 78%, 82%, 1);
+  background: #ffd700;
 
   background: -webkit-linear-gradient(
     0deg,
-    hsla(48, 78%, 82%, 1) 0%,
-    hsla(340, 87%, 59%, 1) 100%
+    #F5E7AD 0%,
+    #f13b78 100%
   );
 
   background: -moz-linear-gradient(
     0deg,
-    hsla(48, 78%, 82%, 1) 0%,
-    hsla(340, 87%, 59%, 1) 100%
+    #F5E7AD 0%,
+    #f13b78 100%
   );
 
   background: linear-gradient(
-    0deg,
-    hsla(48, 78%, 82%, 1) 0%,
-    hsla(340, 87%, 59%, 1) 100%
+    90deg,
+    #F5E7AD 0%,
+    #f13b78 100%
   );
 
   background-repeat: no-repeat;
