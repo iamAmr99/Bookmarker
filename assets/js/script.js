@@ -3,7 +3,6 @@ let siteURL = document.getElementById("siteURLInput");
 let addBtn = document.getElementById("addBtn");
 let bookmarkTable = document.getElementById("bookmarkTable");
 let search = document.getElementById("search");
-
 let sitesList;
 
 if (localStorage.getItem("_db") == null) {
@@ -71,7 +70,7 @@ function Bookmarker(arr) {
   for (let i = 0; i < arr.length; i++) {
     bookmark += `
         <tr id="row">
-            <th scope="row">${i+1}</th>
+            <th scope="row">${i + 1}</th>
             <td>${arr[i].name}</td>
             <td>
             <a href="https://www.${arr[i].url}" class="btn btn-outline-success rounded-circle" title="visit"><i class="fa-solid fa-globe"></i></a>
